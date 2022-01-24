@@ -10,7 +10,11 @@
 html{
     scroll-behavior: smooth;
 }
-
+.as{
+    color: rgb(8, 6, 6);
+    background-color: rgb(12, 7, 7);
+    overflow: hidden;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -28,7 +32,9 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding-top: 170px;
+    padding-bottom: 30px;
+
 }
 .max-width{
     max-width: 1800px;
@@ -377,7 +383,24 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 70%;
 }
-
+.skills-content .right .python::before{
+    width: 60%;
+}
+.skills-content .right .linux::before{
+    width: 44%;
+}
+.skills-content .right .java::before{
+    width: 25%;
+}
+.skills-content .right .django::before{
+    width: 45%;
+}
+.skills-content .right .termux::before{
+    width: 75%;
+}
+.skills-content .right .github::before{
+    width: 43%;
+}
 /* teams section styling */
 .teams .title::after{
     content: "who with me";
@@ -440,7 +463,14 @@ section .title::after{
 .owl-dot:hover{
     background: crimson!important;
 }
+.job:hover{
+    color: #c6e614f1;
+}
 
+.job{
+    font-size: 20px;
+    color: #2c0fd1;
+  }
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -644,6 +674,13 @@ footer{
   }
   .top .media-icons a:nth-child(5):hover{
     color: #FF0000;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(6){
+    background: #090a0c;
+  }
+  .top .media-icons a:nth-child(6):hover{
+    color: #06080a;
     background: #fff;
   }
   footer .content .link-boxes{
