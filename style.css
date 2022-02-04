@@ -127,6 +127,7 @@ section .title::after{
 }
 .navbar .menu li a:hover{
     color: crimson;
+    box-shadow: 0 0 40px 20px rgb(249 228 9);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -230,7 +231,18 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    flex-basis: 25%;
+   padding: 5px;
+   border-top-left-radius: 40px;
+    margin-bottom: 40px;
+    transition: transform 0.4s;
+    box-shadow: 0 0 40px 20px rgb(61, 9, 249);
+}
+.about .about-content .left img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 40px 20px rgb(249 228 9);
+    transform: translateY(-10px);
+
 }
 .about .about-content .right{
     width: 55%;
@@ -239,6 +251,9 @@ section .title::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    background-color: rgba(248, 244, 244, 0.829);
+    box-shadow: 0 0 4px 2px rgb(192, 190, 163);
+    border-radius: 5px;
 }
 .about .about-content .right .text span{
     color: crimson;
@@ -496,8 +511,18 @@ section .title::after{
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
+    background-color: rgba(248, 244, 244, 0.829);
+    box-shadow: 0 0 4px 2px rgb(88, 85, 39);
+    border-radius: 3px;
+    padding: 15px;
 }
-
+.contact .contact-content .column:hover{
+    width: calc(50% - 30px);
+    background-color: rgba(248, 244, 244, 0.829);
+    box-shadow: 0 0 4px 2px rgb(88, 85, 39);
+    border-radius: 3px;
+    padding: 15px;
+}
 
 .contact .contact-content .text{
     font-size: 20px;
