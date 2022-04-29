@@ -517,11 +517,8 @@ section .title::after{
     padding: 15px;
 }
 .contact .contact-content .column:hover{
-    width: calc(50% - 30px);
     background-color: rgba(248, 244, 244, 0.829);
-    box-shadow: 0 0 4px 2px rgb(88, 85, 39);
-    border-radius: 3px;
-    padding: 15px;
+    box-shadow: 0 0 4px 2px rgb(46, 12, 199);
 }
 
 .contact .contact-content .text{

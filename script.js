@@ -70,3 +70,21 @@ $(document).ready(function () {
         }
     });
 });
+function sendEmail(){
+    Email.send({
+        // SecureToken : "afcf8de8-63ac-4320-a8ad-591ee8f2140e",
+        Host : "smtp.gmail.com",
+        Username : "trggamer02595@gmail.com",
+        Password : "vnfzvnwcoehumojm",
+        To : 'amritgiri02595@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : document.getElementById("subject").value,
+        Body : "Name &emsp; &nbsp; &nbsp;: " + document.getElementById("name").value + 
+            "<br> Email &emsp; &nbsp; &nbsp; : " + document.getElementById("email").value + 
+            "<br>Phone No. : " + document.getElementById("phone").value + 
+            "<br>Address &nbsp; &nbsp; : " + document.getElementById("address").value + 
+            "<br>Message &nbsp; &nbsp;: " + document.getElementById("message").value
+    }).then(
+        message => alert("Message Sent Succesfully.\nPlease Check Your provide Email to see the reply.\nThanks for Contact.")
+      );
+}
